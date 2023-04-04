@@ -9,7 +9,6 @@ import Footer from './Footer';
 export default function Container() {
     const [currentPage, setCurrentPage] = useState('Home');
 
-    // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
         if (currentPage === 'Contact') {
             return <Contact />;
@@ -26,10 +25,10 @@ export default function Container() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div style={{ background: 'black', backgroundSize: 'cover' }}>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-            <Footer />
-        </div>
+            <Footer style={{ position: 'absolute', bottom: 0, width: '100%' }} />
+        </div >
     );
 }

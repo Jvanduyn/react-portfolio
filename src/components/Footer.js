@@ -1,9 +1,12 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 
 export default function Footer() {
     return (
-        <div>
-            <p style={{ backgroundSize: 'cover', color: '#12112b', display: 'flex', justifyContent: 'center' }}> built with react by Jacob VanDuyn </p>
-        </div>
+        <footer className="bg-dark text-white mt-5">
+            <Container className="py-3">
+                <p className="text-center mb-0">Built with React by Jacob VanDuyn</p>
+            </Container>
+        </footer>
     );
 }

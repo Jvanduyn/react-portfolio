@@ -1,59 +1,55 @@
 import React from 'react';
-
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const styles = {
     navbarStyle: {
-        background: '#12112b',
-        color: '#564E58',
+        backgroundColor: '#343a40',
+        color: '#ffffff',
+        fontSize: '1.2rem',
+        letterSpacing: '1px',
+        padding: '1rem',
     },
 };
 
 function Header({ currentPage, handlePageChange }) {
     return (
-        <div >
-            <Navbar expand="lg" style={styles.navbarStyle} variant="dark">
-                <Container >
-                    <Navbar.Brand href="#home">Jacob VanDuyn</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-
-                            <Nav.Link
-                                href="#Home"
-                                onClick={() => handlePageChange('Home')}
-                                className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>
-                                Home
-                            </Nav.Link>
-
-                            <Nav.Link href="#Projects"
-                                onClick={() => handlePageChange('Projects')}
-                                className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>
-                                Projects
-                            </Nav.Link>
-
-                            <Nav.Link href="#Resume"
-                                onClick={() => handlePageChange('Resume')}
-                                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
-                                Resume
-                            </Nav.Link>
-
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#Contact"
-                                onClick={() => handlePageChange('Contact')}
-                                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
-                                Contact Me
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+        <Navbar style={styles.navbarStyle} expand="lg" variant="dark">
+            <Navbar.Brand href="#home">Jacob VanDuyn</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ml-auto">
+                    <Nav.Link
+                        href="#home"
+                        onClick={() => handlePageChange('Home')}
+                        className={`nav-link${currentPage === 'Home' ? ' active' : ''}`}
+                    >
+                        Home
+                    </Nav.Link>
+                    <Nav.Link
+                        href="#projects"
+                        onClick={() => handlePageChange('Projects')}
+                        className={`nav-link${currentPage === 'Projects' ? ' active' : ''}`}
+                    >
+                        Projects
+                    </Nav.Link>
+                    <Nav.Link
+                        href="#resume"
+                        onClick={() => handlePageChange('Resume')}
+                        className={`nav-link${currentPage === 'Resume' ? ' active' : ''}`}
+                    >
+                        Resume
+                    </Nav.Link>
+                    <Nav.Link
+                        href="#contact"
+                        onClick={() => handlePageChange('Contact')}
+                        className={`nav-link${currentPage === 'Contact' ? ' active' : ''}`}
+                    >
+                        Contact
+                    </Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 }
-
 
 export default Header;

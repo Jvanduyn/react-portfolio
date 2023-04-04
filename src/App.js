@@ -1,11 +1,10 @@
-import PageContainer from "./components/PageContainer";
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "./components/Container";
 
 function App() {
   return (
     <div>
-      <PageContainer />
+      <Container />
     </div>
   );
 }
