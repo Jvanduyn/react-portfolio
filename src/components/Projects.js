@@ -19,12 +19,12 @@ export default function Project() {
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '100%' }} md={6}>
-                    <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
+                    <Card.Img variant="top" src="./assets/BB.png" />
                     <Card.Body>
-                        <Card.Title>Project 2</Card.Title>
+                        <Card.Title>Budget Buddy</Card.Title>
                         <Card.Text>
-                            I need to add projects here                        </Card.Text>
-                        <Button variant="primary" href="#">View Project</Button>
+                            Small project made to manage your finances.                       </Card.Text>
+                        <Button variant="primary" href="https://budget-buddy.herokuapp.com/">View Project</Button>
                     </Card.Body>
                 </Card>
             </Row>
