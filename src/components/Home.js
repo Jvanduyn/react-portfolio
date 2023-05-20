@@ -53,7 +53,7 @@ export default function Home() {
                     <div style={styles.skill}>React</div>
                     <div style={styles.skill}>CSS</div>
                     <div style={styles.skill}>Node.js</div>
-                    <div style={styles.skill}>Mongoose</div>
+                    <div style={styles.skill}>Mongo</div>
                     <div style={styles.skill}>Graphql</div>
                     <div style={styles.skill}>SQL</div>
                 </div>

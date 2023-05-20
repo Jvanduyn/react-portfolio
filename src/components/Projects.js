@@ -11,9 +11,9 @@ export default function Project() {
                 <Card style={{ width: '100%' }} md={6}>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
                     <Card.Body>
-                        <Card.Title>Project 1</Card.Title>
+                        <Card.Title>Parking Manager</Card.Title>
                         <Card.Text>
-                            I need to add projects here
+                            Web application for the user to manage their paid parking lots.
                         </Card.Text>
                         <Button variant="primary" href="#">View Project</Button>
                     </Card.Body>
@@ -23,7 +23,8 @@ export default function Project() {
                     <Card.Body>
                         <Card.Title>Budget Buddy</Card.Title>
                         <Card.Text>
-                            Small project made to manage your finances.                       </Card.Text>
+                            Web application to manage finances.
+                        </Card.Text>
                         <Button variant="primary" href="https://budget-buddy.herokuapp.com/">View Project</Button>
                     </Card.Body>
                 </Card>
@@ -32,9 +33,9 @@ export default function Project() {
                 <Card style={{ width: '100%' }} md={6}>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
                     <Card.Body>
-                        <Card.Title>Project 3</Card.Title>
+                        <Card.Title>Receiplease</Card.Title>
                         <Card.Text>
-                            I need to add projects here
+                            Web Application used to look up new recipes for food and drinks.
                         </Card.Text>
                         <Button variant="primary" href="#">View Project</Button>
                     </Card.Body>
@@ -42,34 +43,14 @@ export default function Project() {
                 <Card style={{ width: '100%' }} md={6}>
                     <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
                     <Card.Body>
-                        <Card.Title>Project 4</Card.Title>
+                        <Card.Title>Password generator</Card.Title>
                         <Card.Text>
-                            I need to add projects here
+                            Project used to create a random generated password based off the users criteria
                         </Card.Text>
                         <Button variant="primary" href="#">View Project</Button>
                     </Card.Body>
                 </Card>
             </Row>
-            <Card style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
-                <Card.Body>
-                    <Card.Title>Project 5</Card.Title>
-                    <Card.Text>
-                        I need to add projects here
-                    </Card.Text>
-                    <Button variant="primary" href="#">View Project</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://via.placeholder.com/300x150" />
-                <Card.Body>
-                    <Card.Title>Project 6</Card.Title>
-                    <Card.Text>
-                        I need to add projects here
-                    </Card.Text>
-                    <Button variant="primary" href="#">View Project</Button>
-                </Card.Body>
-            </Card>
         </Container>
     );
 }
